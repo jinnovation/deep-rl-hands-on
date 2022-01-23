@@ -5,8 +5,15 @@ description = ""
 authors = ["Jonathan Jin <me@jonathanj.in>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-gym = "0.21.0"
+python = "^3.8"
+gym = ">=0.21.0"
+numpy = "^1.17"
+torch = "1.9"
+torchvision = ">=0.4.1"
+pytorch-ignite = ">=0.2.1"
+
+# Incompatible w/ torch 1.9, which actually installs. might need to fork.
+# ptan = ">=0.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
