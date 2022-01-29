@@ -18,6 +18,9 @@ pyls-isort = "^0.2.2"
 
 # Incompatible w/ torch 1.9, which actually installs. might need to fork.
 pyglet = "^1.5.21"
+tensorboardX = "^2.4.1"
+six = "^1.16.0"
+tensorboard = "^2.8.0"
 # ptan = ">=0.6"
 
 [tool.poetry.dev-dependencies]
