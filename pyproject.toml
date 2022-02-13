@@ -6,7 +6,6 @@ authors = ["Jonathan Jin <me@jonathanj.in>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-gym = ">=0.21.0"
 numpy = "^1.17"
 torch = "1.9"
 torchvision = ">=0.4.1"
@@ -21,6 +20,10 @@ pyglet = "^1.5.21"
 tensorboardX = "^2.4.1"
 six = "^1.16.0"
 tensorboard = "^2.8.0"
+opencv-python = "^4.5.5"
+click = "^8.0.3"
+ale-py = "^0.7.3"
+gym = {version = "^0.21.0", extras = ["accept-rom-license"]}
 # ptan = ">=0.6"
 
 [tool.poetry.dev-dependencies]
@@ -32,6 +35,9 @@ build-backend = "poetry.core.masonry.api"
 
 [[tool.mypy.overrides]]
 module = [
+    "cv2",
     "gym",
+    "torchvision",
+    "tensorboardX",
 ]
 ignore_missing_imports = true
